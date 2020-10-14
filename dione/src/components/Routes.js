@@ -25,8 +25,8 @@ class Routes extends PureComponent {
                   <RouteHandler exact path="/" RouteComponent={() => (<Redirect to="/home" />)} FallbackComponent={HomePage} />
                   <RouteHandler exact path="/home" RouteComponent={UserFeed} FallbackComponent={() => (<Redirect to="/login" />)} />
                   <RouteHandler exact path="/http*" RouteComponent={Submit} FallbackComponent={() => (<Redirect to="/login" />)} />
-
                   <Route path="/@:username" render={ props => <UserProfile key={props.match.params.username} {...props} /> } />                
+        
                 </Switch>
               </div>
             </section>

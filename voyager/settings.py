@@ -155,8 +155,8 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend', #para poder seguir usando la clave y usuario y poder ingresar al sitio admin
 )
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '65545908578-rdnfspb07n77lf4g4iubvc29u4kq85kf.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'Ar2qeCzq6bLxnzZYn9MPFNle'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '984261377840-9996l1j4751tgop56ls0bpajjqau30fa.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '0QMk-CBkQsb-hmCdnPjCysNZ'
 
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
 

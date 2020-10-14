@@ -9,8 +9,8 @@ urlpatterns = [
   path('api/posts/recent', views.RecentPostsList.as_view() ), #listar todos los posts o crear uno nuevo
   path('api/posts/<str:username>', views.PostList.as_view() ), #listar todos los posts del usuario
   path('api/posts/<str:username>/emojis/<str:emoji>', views.PostUserEmoji.as_view() ), #listar todos los posts del usuario para este emoji
-  path('api/posts/<str:username>/lists/<str:list>', views.PostUserList.as_view() ), #listar todos los posts de una lista del usuario
-
+  path('api/<str:username>/<int:pk>/delete', views.PostDelete.as_view() ), #listar todos los posts de una lista del usuario
+  path('api/posts/<str:username>/lists/<str:list>', views.PostUserList.as_view() ),
   path('api/activities/<str:post>/view', views.PostActivityView.as_view() ),
   path('api/activities/<str:post>/vote', views.PostActivityVote.as_view() ),
   path('api/activities/<str:post>/vote/destroy', views.PostActivityVoteDestroy.as_view() ),
